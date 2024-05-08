@@ -82,20 +82,14 @@ const list = document.querySelector(".gallery");
 list.innerHTML = listImages;
     
 const lightbox = new SimpleLightbox('.gallery a', {
-    animationSpeed: 250,
-    captionsData: title,
-    captionDelay: 0,
+    animationSpeed: 200,
+    animationSlide: true,
+    disableScroll: false,
+    history: false,
+    captionsData: 'alt',
+    captionDelay: 250,
   })
 
-    // list.addEventListener('click', (event) => {
-    //     event.preventDefault();
-
-    //         if (event.target.classList.contains('gallery-image')) {
-    //         const imageURL = event.target.getAttribute('data-source');
-    //         const instance = basicLightbox.create(`<img src="${imageURL}">`);
-    //         instance.show();
-    //     }
-    // });
 
 
 
